@@ -1,0 +1,44 @@
+---
+import User from '../components/User.astro';
+---
+<div>
+    <header>
+        <h1><a href="/">Poke Bowl TCG</a></h1>
+        <nav>
+        <ul>
+            <li><a href="/pokemon">Pokémon</a></li>
+            <li><a href="/one-piece">One Piece</a></li>
+            <li><a href="/dragon-ball">Dragon Ball</a></li>
+            <li><a href="/lorcana">Lorcana</a></li>
+        </ul>
+        </nav>
+        <User />
+    </header>
+    <hr>
+</div>
+
+<style>
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    li{
+        margin: 20px
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        width: 100vw;
+    }
+    hr{
+        margin: 5px
+    }
+    a{
+        text-decoration: none;
+        color: #463317;
+        font-weight: bold;
+        
+    }
+</style>
